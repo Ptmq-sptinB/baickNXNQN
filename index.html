@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour du lịch</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<header>
+    <div id="menu-bar" class="fas fa-bars"></div>
+    <a href="#" class="logo"><span></span>Roavia</a>
+    <nav class="navbar">
+        <a href="#home">trang chủ</a>
+        <a href="#book"> đặt ngay</a>
+        <a href="#packages">gói</a>
+        <a href="#services">dịch vụ</a>
+        <a href="#gallery">giới thiệu</a>
+        <a href="#contact">liên hệ</a>
+    </nav>
+
+    <div class="icons">
+        <i class="fas fa-search" id="search-btn"></i>
+        <i class="fas fa-user" id="login-btn"></i>
+    </div>
+    <form action="" class="search-bar-container">
+        <label for="search-bar" class="fas fa-search"></label>
+        <input type="search" id="search-bar" placeholder="search here...">
+    </form>
+   
+</header>
+
+<div class="login-form-container">
+    <i class="fas fa-times" id="form-close"></i>
+    <form action="">
+        <h3>đăng nhập</h3>
+        <input type="email" class="box" placeholder="nhập email của bạn">
+        <input type="password" class="box" placeholder="nhập mật khẩu">
+        <input type="submit" value="đăng nhập ngay" class="btn">
+        <input type="checkbox" id="remember">
+        <label for="remember">lưu đăng nhập</label>
+        <p>quên mật khẩu? <a href="#">nhấn vào đây</a></p>
+        <p>bạn chưa có tài khoản?<a href="#">tạo ngay</a></p>
+        
+    </form>
+</div>
+
+<section class="home" id="home">
+    <div class="content">
+        <h3>du lịch khám phá, chặng đường mới lạ</h3>
+        <p>du lịch thả ga không lo về giá</p>
+        <a href="#" class="btn">khám phá thêm</a>
+    </div>
+
+    <div class="controls">
+        <span class="vid-btn active" data-src="images/intro.mp4"></span>
+        <span class="vid-btn" data-src="images/vid1.mp4"></span>
+        <span class="vid-btn" data-src="images/vid2.mp4"></span>
+        <span class="vid-btn" data-src="images/vid3.mp4"></span>
+        <span class="vid-btn" data-src="images/vid4.mp4"></span>
+    </div>
+
+    <div class="video-container">
+        <video src="images/intro.mp4" id="video-slider" loop autoplay muted></video>
+    </div>
+
+</section>
+
+
+<section class="book" id="book">
+
+    <h1 class="heading">
+        <span>đ</span>
+        <span>ặ</span>
+        <span>t</span>
+        <span class="space"></span>
+        <span>n</span>
+        <span>g</span>
+        <span>a</span>
+        <span>y</span>
+    </h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img src="images/logo1.webp" alt="">
+        </div>
+
+        <form action="">
+            <div class="inputBox">
+                <h3>địa điểm</h3>
+                <input type="text" placeholder="Địa danh">
+            </div>
+            <div class="inputBox">
+                <h3>số người</h3>
+                <input type="number" placeholder="Số lượng" min="0">
+            </div>
+            <div class="inputBox">
+                <h3>ngày đi</h3>
+                <input type="date">
+            </div>
+            <div class="inputBox">
+                <h3>ngày về</h3>
+                <input type="date">
+            </div>
+            <input type="submit" class="btn" value="đặt ngay">
+        </form>
+
+    </div>
+
+</section>
+
+<section class="packages" id="packages">
+
+    <h1 class="heading">
+        <span>g</span>
+        <span>ó</span>
+        <span>i</span>
+        <span class="space"></span>
+        <span>1</span>
+        <span class="space"></span>
+        <span>n</span>
+        <span>g</span>
+        <span>à</span>
+        <span>y</span>
+    </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="images/hanoi.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> HÀ NỘI </h3>
+                <p>Hà Nội, thủ đô của Việt Nam, nổi tiếng với kiến trúc trăm tuổi và nền văn hóa phong phú với sự ảnh hưởng của khu vực Đông Nam Á, Trung Quốc và Pháp.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price">969.000<span>1.1969.000</span> </div>
+                <a href="#" class="btn">đặt ngay</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/hue.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> HUẾ </h3>
+                <p>Huế là một trong những trung tâm về văn hóa – du lịch, y tế chuyên sâu, giáo dục đào tạo, khoa học công nghệ của Miền Trung - Tây Nguyên và cả nước.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> 869.000 <span>1.069.000</span> </div>
+                <a href="#" class="btn">đặt ngay</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/tphcm.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> TP.HỒ CHÍ MINH </h3>
+                <p>Thành phố Hồ Chí Minh (TPHCM) hay Sài Gòn là thành phố trung tâm lớn nhất tại Việt Nam nằm tiếp giáp giữa Tây Nam Bộ và Đông Nam Bộ.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> 769.000 <span>1.069.000</span> </div>
+                <a href="#" class="btn">đặt ngay</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/dalat.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> ĐÀ LẠT </h3>
+                <p>Đà Lạt hiện là thành phố du lịch nổi tiếng nhất Việt Nam. Nơi được được mệnh danh là thành phố mộng mơ với ngàn hoa đua nhau khoe sắc.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> 669.000 <span>969.000</span> </div>
+                <a href="#" class="btn">đặt ngay</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/danang.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> ĐÀ NẴNG </h3>
+                <p>Đà Nẵng là trung tâm kinh tế, chính trị và văn hóa quan trọng của Miền Trung, Đà Nẵng còn nổi tiếng với nhiều danh thắng, cảnh đẹp, và khu vui chơi giải trí hàng đầu cả nước.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> 769.000 <span>969.000</span> </div>
+                <a href="#" class="btn">đặt ngay</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/phuquoc.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> PHÚ QUỐC </h3>
+                <p>Phú Quốc là một hòn đảo xinh đẹp mà nơi đây còn chứa đựng nhiều điều bí ẩn mà không phải ai cũng có thể khám phá hết được.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> 769.000 <span>969.000</span> </div>
+                <a href="#" class="btn">đặt ngay</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="services" id="services">
+
+    <h1 class="heading">
+        <span>d</span>
+        <span>ị</span>
+        <span>c</span>
+        <span>h</span>
+        <span class="space"></span>
+        <span>v</span>
+        <span>ụ</span>
+       
+    </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <i class="fas fa-hotel"></i>
+            <h3>khách sạn</h3>
+            <p>Chúng tôi cung cấp dịch vụ đặt phòng tại những khách sạn tốt nhất, nằm ở trung tâm các điểm du lịch nổi tiếng. Tận hưởng không gian tiện nghi và dịch vụ đẳng cấp trong suốt hành trình của bạn.</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-utensils"></i>
+            <h3>đồ ăn và thức uống</h3>
+            <p>Khám phá hương vị đặc trưng của từng vùng miền qua các tour ẩm thực hấp dẫn. Từ món ăn đường phố đến nhà hàng sang trọng, chúng tôi sẽ đưa bạn đến với những trải nghiệm ẩm thực không thể nào quên.</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-bullhorn"></i>
+            <h3>những điều chú ý</h3>
+            <p>Hướng dẫn chi tiết về thủ tục, hành lý, và quy tắc tại điểm đến. Chuẩn bị tốt để chuyến đi của bạn luôn an toàn và trọn vẹn.</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-globe-asia"></i>
+            <h3>đi khắp thế giới</h3>
+            <p>Chọn lựa từ các tour du lịch quốc tế đặc sắc, ghé thăm các thành phố biểu tượng, kỳ quan thiên nhiên, và khám phá văn hóa độc đáo trên khắp thế giới.</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-plane"></i>
+            <h3>máy bay</h3>
+            <p>Dịch vụ tour trọn gói bao gồm vé máy bay, khách sạn và lịch trình chi tiết. Mang đến sự thuận tiện tối đa và trải nghiệm du lịch chuyên nghiệp.</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-hiking"></i>
+            <h3>thám hiểm</h3>
+            <p>Dành cho những ai yêu thích sự mạo hiểm, tour thám hiểm đưa bạn đến những nơi hoang sơ, kỳ vĩ nhất. Cùng chúng tôi leo núi, lặn biển, và khám phá thiên nhiên tuyệt đẹp.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="gallery" id="gallery">
+
+    <h1 class="heading">
+        <span>g</span>
+        <span>i</span>
+        <span>ớ</span>
+        <span>i</span>
+        <span class="space"></span>
+        <span>t</span>
+        <span>h</span>
+        <span>i</span>
+        <span>ệ</span>
+        <span>u</span>
+    </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="images/canhvat1.jpg" alt="">
+            <div class="content">
+                <h3>Tận Hưởng Thiên Nhiên Tuyệt Vời</h3>
+                <p>Nếu yêu thích vẻ đẹp thiên nhiên, hãy ghé thăm Đà Lạt – thành phố ngàn hoa với khí hậu mát mẻ quanh năm, hay đến Phú Quốc – thiên đường biển đảo với làn nước trong xanh và bờ cát trắng mịn. </p>
+              
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/canhvat2.jpg" alt="">
+            <div class="content">
+                <h3>Hòa Mình Vào Nhịp Sống Hiện Đại và Sôi Động</h3>
+                <p>Đến với Tp. Hồ Chí Minh, bạn sẽ cảm nhận sự sôi động của một thành phố không ngủ. Trong khi đó, Đà Nẵng chào đón bạn bằng bãi biển Mỹ Khê tuyệt đẹp, cầu Rồng độc đáo và nhịp sống trẻ trung, hiện đại nhưng đầy thân thiện.</p>
+              
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/canhvat3.jpg" alt="">
+            <div class="content">
+                <h3>Khám Phá Vẻ Đẹp Văn Hóa và Lịch Sử</h3>
+                <p>Nếu yêu thích vẻ đẹp thiên nhiên, hãy ghé thăm Đà Lạt – thành phố ngàn hoa với khí hậu mát mẻ quanh năm, hay đến Phú Quốc – thiên đường biển đảo với làn nước trong xanh và bờ cát trắng mịn.</p>
+              
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/tphcmcanhvat.jpg" alt="">
+            <div class="content">
+                <h3>Chương trình tour Tp.HỒ CHÍ MINH</h3>
+                <p>Dinh độc lập
+                    -Nhà thờ Đức Bà
+                    -Bưu điện Thành phố
+                    -Quan bảo tàng chiến tranh
+                    -Chùa Thiên Hậu
+                    -Chợ Bến Thành</p>
+                
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/phuquocanhvat.jpg" alt="">
+            <div class="content">
+                <h3>Chương trình tour PHÚ QUỐC</h3>
+                <p>Tham quan đông nam đảo Phú Quốc
+                    -Khám phá nam đảo Phú Quốc kết hợp cáp treo Hòn Thơm</p>
+                
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/huecanhvat.jpg" alt="">
+            <div class="content">
+                <h3>Chương trình tour HUẾ</h3>
+                <p>Đại Nội
+                    -Chùa Thiên Mụ
+                    -Hoàng thành
+                    -Lăng Tự Đức
+                    -Nhà Vườn Huế
+                    -Đồi Vọng cảnh Huế</p>
+                
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/hanoicanhvat.jpg" alt="">
+            <div class="content">
+                <h3>Chương trình tour HÀ NỘI</h3>
+                <p>Chùa Trấn Quốc
+                    -Khu di tích Lăng Chủ tịch Hồ Chí Minh
+                    -Văn Miếu – Quốc Tử Giám
+                    -Hoàng thành Thăng Long
+                    -Nhà tù Hỏa Lò
+                    -Hồ Gươm</p>
+                
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/danangcanhvat.jpg" alt="">
+            <div class="content">
+                <h3>Chương trình tour ĐÀ NẴNG</h3>
+                <p>Cầu Sông Hàn
+                    -Bán đảo Sơn Trà
+                    -Chợ Cồn
+                    -Ngũ Hành Sơn (Non Nước)
+                    -Làng Đá Non Nước
+                    -Bãi biển Mỹ Khê</p>
+                
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/dalatcanhvat.jpg" alt="">
+            <div class="content">
+                <h3>Chương trình tour ĐÀ LẠT</h3>
+                <p>Dinh Bảo Đại
+                    -Đồi Robin – Cáp treo Đà Lạt
+                    -Thiền viện Trúc Lâm
+                    -Thác Datanla
+                    -Thung Lũng Tình Yêu</p>
+                
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    
+    <h1 class="heading">
+        <span>l</span>
+        <span>i</span>
+        <span>ê</span>
+        <span>n</span>
+        <span class="space"></span>
+        <span>h</span>
+        <span>ệ</span>
+    </h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img src="images/logo.png" alt="">
+        </div>
+
+        <form action="">
+            <div class="inputBox">
+                <input type="text" placeholder="Tên">
+                <input type="email" placeholder="email">
+            </div>
+            <div class="inputBox">
+                <input type="number" placeholder="Số điện thoại">
+                <input type="text" placeholder="Vấn đề">
+            </div>
+            <textarea placeholder="Lời nhắn" name="" id="" cols="30" rows="10"></textarea>
+            <input type="submit" class="btn" value="gửi">
+        </form>
+
+    </div>
+    
+</section>
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>lời giới thiệu</h3>
+            <p>Chúng tôi sẽ mang đến cho bạn một trải nghiệm du lịch đầy niềm vui, hãy book tour ở Roavia để nhận được ưu đãi tốt nhất. Roavia mang đến sự uy tín, chất lượng, hài lòng.</p>
+        </div>
+        <div class="box">
+            <h3>liên kết</h3>
+            <a href="#">trang chủ</a>
+            <a href="#">đặt ngay</a>
+            <a href="#">gói</a>
+            <a href="#">dịch vụ</a>
+            <a href="#">giới thiệu</a>
+            <a href="#">liên hệ</a>
+        </div>
+        
+
+    </div>
+
+</section>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
